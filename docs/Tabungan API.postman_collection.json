@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "ff689598-4815-4c7d-8cbb-9778f99afc9b",
+		"name": "Tabungan API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:1323/daftar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"adhi\",\n    \"no_hp\": \"085607678087\",\n    \"nik\": \"3518133001390093\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/daftar",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"daftar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/tabung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no_rekening\": \"1695840287\",\n    \"nominal\": 1000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/tabung",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"tabung"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/tarik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no_rekening\": \"1695840287\",\n    \"nominal\": 900000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/tarik",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"tarik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/saldo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/saldo/1695840287",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"saldo",
+						"1695840287"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/mutasi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/mutasi/1695840287",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"mutasi",
+						"1695840287"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
